@@ -1,0 +1,23 @@
+{
+  "name": "shady-alley-website-v2-1",
+  "version": "1.0.0",
+  "description": "shady ally",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRSAOT/shadyalley.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TRSAOT/shadyalley/issues"
+  },
+  "homepage": "https://github.com/TRSAOT/shadyalley#readme",
+  "dependencies": {
+    "ytdl": "^1.4.1",
+    "ytdl-core": "^4.9.1"
+  }
+}
