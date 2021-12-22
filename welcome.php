@@ -1,3 +1,16 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+ 
+<!DOCTYPE html>
+<html lang="en">
 <!DOCTYPE html>
 <link rel="shortcut icon" type="image/x-icon" href="img.png" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/boardgame-io/0.49.5/boardgameio.min.js"></script>
@@ -66,7 +79,8 @@
 </nav>
 
 
-<iframe width="420" height="345" src="https://www.youtube.com/embed/dQw4w9WgXcQ controls=0">
-</iframe>
+        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
 
-
+</body>
+</html>
