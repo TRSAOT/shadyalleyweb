@@ -62,8 +62,8 @@
   <li><a href="merch.html">Merch and Ranks</a></li>
   <li><a href="p.html">Ytdwnld</a></li>
   <li><a href="Login.html">Admin Login</a></li>
-   <li style="float:right">	<div class="mode"><a class="change" class="button">OFF</a></li>
-
+   <li style="float:right"><div class="mode"><span class="change">OFF</span></li>
+    <li style="float:right">Dark Mode</li>
 </ul>
 </nav>
 </Body>
@@ -77,38 +77,36 @@
 	</script>
 	
 	<style>
-		.mode {
-			float:right;
-		}
-    .change {
-			cursor: pointer;
-			border: 1px solid #555;
-			border-radius: 40%;
-			width: 20px;
-			text-align: center;
-			padding: 5px;
-			margin-left: 8px;
-		}
-		.dark{
+		.change {
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: #4CAF50;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 14px 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.change {
+  background-color: #f3f3f3;
+  color: black; 
+  border: 2px solid #ffffff;
+}
+
+.change:hover {
+  background-color: #d4d4d4;
+  color: white;
+}
+    .dark {
 			background-color: #222;
 			color: #e6e6e6;
 		}
 	</style>
 </head>
-
-<body>
-	<div class="mode">
-		Dark mode:			
-</div>
-
-		<h3>Light and Dark Mode</h3>
-		
-<p>
-			Click on the switch on top-right
-			to move to dark mode.
-		</p>
-
-	</div>
 	
 	<script>
 		$( ".change" ).on("click", function() {
