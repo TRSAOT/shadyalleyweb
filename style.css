@@ -33,3 +33,104 @@ li a.active {
   color: white;
   background-color: #0070ff;
 }
+  .button {
+  background-color: white;
+  border: none;
+  color: #0070ff;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button:hover {
+  background-color: #F7F7F7;
+  color: #0070ff;
+}
+.button2 {
+  background-color: #0070ff;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button2:hover {
+  background-color: #0070ee;
+  color: white;
+}
+
+}
+.button {
+  background-color: white;
+  border: none;
+  color: #0070ff;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button:hover {
+  background-color: #F7F7F7;
+  color: #0070ff;
+}
+.button2 {
+  background-color: #0070ff;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button2:hover {
+  background-color: #0070ee;
+  color: white;
+}
+.column {
+  float: left;
+  margin-top: 100px;
+}
+.column.side {
+  width: 25%;
+}
+.column.middle {
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  margin-top:5px;
+  padding: 10px;
+  height: 100px;
+  text-align: center;
+}
+.about {
+
+text-align: center;  
+}

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" type="image/x-icon" href="Logo.png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/boardgame-io/0.49.5/boardgameio.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
@@ -12,10 +13,10 @@
 </script>
 <style>
 .button {
-  background-color: #ffffff; /* Green */
+  background-color: white;
   border: none;
-  color: #4CAF50;
-  padding: 8px 16px;
+  color: #0070ff;
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -23,19 +24,37 @@
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 4px;
 }
-
-.button1 {
-  background-color: #f3f3f3;
-  color: black; 
-  border: 2px solid #ffffff;
+.button:hover {
+  background-color: #F7F7F7;
+  color: #0070ff;
 }
-
-.button1:hover {
-  background-color: #d4d4d4;
+.button2 {
+  background-color: #0070ff;
+  border: none;
   color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button2:hover {
+  background-color: #0070ee;
+  color: white;
+}
+ .footer {
+  border-top-style: solid;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
 </style>
-
 <head>
   <meta name="google-site-verification" content="VaydnY8ik-DsMVO5FNoFB1Ybc5vGQSbm4fWQJN27fN4" />
 	<meta charset="utf-8">
@@ -55,57 +74,100 @@
 <ul>
   <li hight="50"><img src="Logo.png" width="100px" height="50px"></li>
   <li><a href="/">Home</a></li>
-  <li><a href="#">Shady Alley</a></li>
-  <li><a href="#">Shady Valley</a></li>
+  <li><a href="ShadyAlley.html">Shady Alley</a></li>
+  <li><a href="ShadyValley.html">Shady Valley</a></li>
   <li><a href="#">SCA</a></li>
   <li><a href="#">Other</a></li>
   <li><a href="merch.html">Merch and Ranks</a></li>
-  <li><a href="p.html">Ytdwnld</a></li>
+  <li><a href="Ytwatcher.html">Ytdwnld</a></li>
   <li><a href="Login.html">Admin Login</a></li>
+  <li><a href="hastebin.html">Hastebin</a></li>
    <li style="float:right"><div class="mode"><span class="change">OFF</span></li>
-    <li style="float:right">Dark Mode</li>
+    <li style="float:right"><span class="dm">Dark Mode:</li>
 </ul>
 </nav>
 </Body>
-  <h4 class="container-fluid mt-5 bg-primary text-light text-center">
-      About us</h4>
-      <body class="text-center">
-        <p>E</p>
-       <p><iframe width="420" height="345" src="https://www.youtube.com/embed/Qskm9MTz2V4 controls=0"></iframe></p>
 <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-	</script>
-	
-	<style>
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<style>
+.column {
+  float: left;
+  margin-top: 100px;
+}
+.column.side {
+  width: 25%;
+}
+.column.middle {
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  margin-top:5px;
+  padding: 10px;
+  height: 100px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+    .dm {
+  color: #666;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+
+  display: block;
+    }
 		.change {
-  background-color: #ffffff; /* Green */
-  border: none;
-  color: #4CAF50;
+  background-color: #ffffff;
+  color: #666;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  display: block;
   margin: 0;
   padding: 14px 16px;
-  transition-duration: 0.4s;
   cursor: pointer;
 }
 
 .change {
   background-color: #f3f3f3;
-  color: black; 
-  border: 2px solid #ffffff;
+  color: #666; 
 }
 
 .change:hover {
   background-color: #d4d4d4;
-  color: white;
+  color: #0070ff;
 }
-    .dark {
-			background-color: #222;
-			color: #e6e6e6;
-		}
+html {
+height: 100%;
+}
+.dark {
+background-color: #3E3E3E;
+background: radial-gradient(ellipse at center, #707070 13%, #333333 100%);
+height: 100%;
+text-color: white;  
+}
+.about {
+
+text-align: center;  
+}
 	</style>
+  <div class="row">
+  <div class="column side about"><h1>Forms</h1><p>Coming soon!</p></div>
+  <div class="column middle"><h1 class="about">About Us</h1><p>The offical Shady Alley Website was created after the orignial website was retired.  Since then we have made lots of new features that you cant miss!</p><h5 class="about">Video tour of our website</h5><p class="about"><iframe width="420" height="345" src="https://www.youtube.com/embed/Qskm9MTz2V4 controls=0"></iframe></p></div>
+  <div class="column side about"><h1>Merch</h1><p>Shady Alley Merch MEGA SALE UP TO 50% OFF ON ALL MERCH!!! BUY NOW!!!</p><a class="button button2" href="merch.html">Buy merch</a></div>
+  <div class="footer">Trademarked by TRSAOT enterprises 2021-2022</div>
+
 </head>
 	
 	<script>
